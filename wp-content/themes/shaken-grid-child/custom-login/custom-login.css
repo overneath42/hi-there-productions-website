@@ -1,0 +1,8 @@
+.login h1 a {
+	/* Title image (The "WordPress Logo") */
+	background: url(login-logo.png) 0 0 no-repeat;
+	width: 325px;
+	height: 59px;
+	margin-bottom: 20px;
+	background-size: 100% auto;
+} 
