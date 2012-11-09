@@ -1,8 +1,31 @@
+body.login {
+	background-color: #222;
+	background-image: url(../images/noise-2.png);
+}
+
+.login form {
+	-webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.45);
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.45);
+}
+
 .login h1 a {
-	/* Title image (The "WordPress Logo") */
-	background: url(login-logo.png) 0 0 no-repeat;
+	background: url(login-logo.png) center center no-repeat;
 	width: 325px;
-	height: 59px;
+	height: 261px;
 	margin-bottom: 20px;
 	background-size: 100% auto;
-} 
+}
+
+.login .message {
+	background-color: rgba(255, 255, 255, 0.6);
+	border: none;
+	display: block;
+	-webkit-box-shadow: 0 7px 7px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 7px 7px rgba(0, 0, 0, 0.6);
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.login #nav a, .login #backtoblog a {
+	color: #8dc3ce;
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.7);
+}
