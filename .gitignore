@@ -9,6 +9,8 @@
 *.vi
 *~
 *.sass-cache
+*.tar.gz
+*.zip
 
 # OS or Editor folders
 .DS_Store
@@ -19,8 +21,11 @@ Thumbs.db
 .tmproj
 *.esproj
 nbproject
+
+# Sublime Text 2
 *.sublime-project
 *.sublime-workspace
+sftp-config.json
 
 # Folders to ignore
 .hg
@@ -35,11 +40,13 @@ build/buildinfo.properties
 build/config/buildinfo.properties
 
 .htaccess
+logs
 wp-config.php
 wp-content/uploads/
 wp-content/blogs.dir/
 wp-content/upgrade/
 wp-content/backup-db/
+wp-content/plugins/
 wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 sitemap.xml
