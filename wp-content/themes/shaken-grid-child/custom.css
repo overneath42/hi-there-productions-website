@@ -1,0 +1,21 @@
+#header .wrap {
+	background: url(images/hithere/header_eyes_solo.png) no-repeat top right;
+	-webkit-background-size: auto 50px;
+	-moz-background-size: auto 50px;
+	background-size: auto 50px;
+}
+
+#site-info {
+	margin: 9px 0 0 0;
+}
+
+.contact-wrap {
+	margin-top: 1em;
+	overflow: hidden;
+}
+
+.contact-wrap p {
+	font-size: 1.3em;
+	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+	margin: 0;
+}
