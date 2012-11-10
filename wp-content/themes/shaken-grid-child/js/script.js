@@ -32,11 +32,11 @@ jQuery.fn.quickEach = (function(){
 	$('.vid-container').fitVids();
 
 	// Show/Hide Filter Menu
-	// $('#filtering-nav ul').hide();
-	// $('a.filter-btn').click(function(){
-	// 	$('#filtering-nav ul').slideToggle();
-	// 	return false;
-	// });
+	$('#filtering-nav ul').hide();
+	$('a.filter-btn').click(function(){
+		$('#filtering-nav ul').slideToggle();
+		return false;
+	});
 
 	// Submenus
 	var submenu_config = {
@@ -286,3 +286,39 @@ function stickyFooter(){
           width : returnWidth
     };
   };
+
+
+ // homepage contact info effect
+
+jQuery(document).ready(function($) {
+
+	$('.custom-contact-link').on('click', function (e) {
+		var h;
+		e.preventDefault();
+
+		// this is the wackiest toggle I've ever written. Not sure
+		// how or why it works, but that's life.
+
+		h = parseInt($('.contact-wrap').css('height'), 10);
+
+		if ($('.contact-wrap') ) {
+			$('.contact-wrap').hide(300, function() {
+				$(this).remove();
+			});
+		}
+
+		if(h > 0) {
+			return false;
+		}
+
+		$('#header .wrap').append('<div class="contact-wrap"></div>');
+		$contactWrap = $('.contact-wrap');
+
+		$contactWrap.hide();
+
+		$contactWrap.load('/hi-there-productions-website/contact-me .page-entry > p', function () {
+			$contactWrap.show(300);
+		});
+	});
+
+}); // end .ready()
