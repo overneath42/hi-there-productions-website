@@ -307,7 +307,7 @@ jQuery(document).ready(function($) {
 			});
 		}
 
-		if(h > 0) {
+		if (h > 0) {
 			return false;
 		}
 
