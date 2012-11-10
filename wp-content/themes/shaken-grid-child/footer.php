@@ -15,7 +15,7 @@
 </div><!-- #footer -->
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js?v=20120423234912"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/script.js?v=20120423234909"></script>
+<script src="wp-content/themes/<?php echo get_stylesheet(); ?>/js/script.js?v=20120423234909"></script>
 
 <?php if( is_home() || is_archive() || is_search() ): ?>
 	<script src="http://platform.tumblr.com/v1/share.js"></script>
